@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container m-5 mx-auto">
+        <div class="container">
+            <button id="logout">Logout</button>
+            <h4 id="name">Name</h4>
+            <h4 id="email">Emails</h4>
+<img src="" alt="" id="dp">
+            <div class="row">
+                <div class="col col-lg-8">
+                    <input type="text" id="input" class="input_text">
+                </div>
+                <div class="col col-lg-4">
+                    <button class="btn btn-primary" id="addbtn"><i class="fa-thin fa-plus"></i></button>
+                    <button class="btn btn-danger" id="deletebtn"><i class="fa-solid fa-trash-can"></i></button>
+                    <button class="btn btn-danger" id="updatebtn" style="display: none;">Update</button>
+                </div>
+              
+                </div>
+                
+
+            </div>
+            <div class="row">
+                <div class="col col-lg-3">
+                    <input type="checkbox" id="checkbox">
+
+            </div>
+
+        
+           
+          
+        </div>
+        <div class="container " id="maincontent">
+
+
+        </div>
+    </div>
+    <!-- <button id="changetheme">Change Theme</button> -->
+
+   <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-auth-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-database-compat.js"></script>
+   <script>
+      const firebaseConfig = {
+    apiKey: "AIzaSyBcXtE-pBnuK8vq9OUhPbkbJ2rsMbrbK24",
+    authDomain: "database-8958c.firebaseapp.com",
+    databaseURL: "https://database-8958c-default-rtdb.firebaseio.com",
+    projectId: "database-8958c",
+    storageBucket: "database-8958c.firebasestorage.app",
+    messagingSenderId: "434470581285",
+    appId: "1:434470581285:web:ad71f4e61d81dd01bf3bcc",
+    measurementId: "G-2DN0C4ES2M"
+  };
+  firebase.initializeApp(firebaseConfig);
+   </script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

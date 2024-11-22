@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Create Account</h2>
+  
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password">
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" required placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+     
+        <input type="file" id="uploadimage" accept=".jpg,.png,.gif">
+      </div>
+      <button type="submit" class="submit-btn" id="submit">Sign Up</button>
+  <a href="login.html">login page</a>
+    <button id="googlesignin">Google signin</button>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-database-compat.js"></script>
+  <script>
+     const firebaseConfig = {
+   apiKey: "AIzaSyBcXtE-pBnuK8vq9OUhPbkbJ2rsMbrbK24",
+   authDomain: "database-8958c.firebaseapp.com",
+   databaseURL: "https://database-8958c-default-rtdb.firebaseio.com",
+   projectId: "database-8958c",
+   storageBucket: "database-8958c.firebasestorage.app",
+   messagingSenderId: "434470581285",
+   appId: "1:434470581285:web:ad71f4e61d81dd01bf3bcc",
+   measurementId: "G-2DN0C4ES2M"
+ };
+ firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="signup.js"></script>
+</body>
+</html>
+<!-- ddjskejk9 -->
+<!-- server -->
